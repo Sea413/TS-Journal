@@ -1,0 +1,19 @@
+{
+  "name": "journal",
+  "description": "Our Journal",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/Sea413/Stunning-Journal-Count",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2",
+    "bootstrap": "^3.3.6"
+  }
+}

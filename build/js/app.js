@@ -1,1 +1,12 @@
-!function t(r,e,n){function o(a,i){if(!e[a]){if(!r[a]){var f="function"==typeof require&&require;if(!i&&f)return f(a,!0);if(u)return u(a,!0);var c=new Error("Cannot find module '"+a+"'");throw c.code="MODULE_NOT_FOUND",c}var l=e[a]={exports:{}};r[a][0].call(l.exports,function(t){var e=r[a][1][t];return o(e?e:t)},l,l.exports,t,r,e,n)}return e[a].exports}for(var u="function"==typeof require&&require,a=0;a<n.length;a++)o(n[a]);return o}({1:[function(t,r,e){var n=t("./../js/count.js").count;$(document).ready(function(){$("#form-entry").submit(function(t){t.preventDefault();var r=$("#titleId").val(),e=$("#textAreaId").val(),o=n(e);$("#titleToPage").text(r),$("#paragraphToPage").text(e),$("#outputToPage").text("Your journal entry had "+o+"words")})})},{"./../js/count.js":2}],2:[function(t,r,e){e.count=function(t){t=t.split(" ");var r=t.length;return r}},{}]},{},[1]);
+var Journal;
+(function (Journal_1) {
+    var Journal = (function () {
+        function Journal(name, date, entry) {
+            this.name = name;
+            this.date = date;
+            this.entry = entry;
+        }
+        return Journal;
+    }());
+    Journal_1.Journal = Journal;
+})(Journal || (Journal = {}));
